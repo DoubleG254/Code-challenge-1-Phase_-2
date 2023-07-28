@@ -4,7 +4,7 @@ function TableContent({transaction,onDelete}){
     const{date,description,category,amount,id}=transaction
     //delete row from the DOM and server
     function handleDelete(){
-      fetch(`http://localhost:3000/transactions/${id}`,{
+      fetch(`https://transactions-sf47.onrender.com/transactions/${id}`,{
         method:"DELETE"
       })
       onDelete(id)

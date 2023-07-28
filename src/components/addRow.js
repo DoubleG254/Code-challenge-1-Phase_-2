@@ -15,7 +15,7 @@ function AddRow({onAdd}){
      amount: amount,
    };
  //Updating transaction data to the server and the DOM
-   fetch("http://localhost:3000/transactions", {
+   fetch("https://transactions-sf47.onrender.com/transactions", {
      method: "POST",
      headers: { 'Content-Type': "application/json" },
      body: JSON.stringify(newRow)

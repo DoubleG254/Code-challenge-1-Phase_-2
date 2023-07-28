@@ -9,7 +9,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("https://transactions-sf47.onrender.com/transactions")
       .then((resp) => resp.json())
       .then(
         (info) => {
