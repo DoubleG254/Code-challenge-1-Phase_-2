@@ -44,6 +44,7 @@ function App() {
 
   return (
     <div>
+      <h1>TITLES</h1>
       <AddRow onAdd={onAdd}/>
       <br/>
      <Search transactions={data} onDelete={onDelete}/>
